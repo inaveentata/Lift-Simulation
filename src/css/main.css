@@ -28,6 +28,7 @@ header {
   cursor: pointer;
   background-color: transparent;
   border-radius: 5px;
+  font-weight: 600;
 }
 
 .building {
