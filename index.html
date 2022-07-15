@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lift</title>
+    <link rel="stylesheet" href="/src/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lift Simulation</h1>
+    </header>
+    <div class="input-container">
+      <button class="btn" id="increase-floor">+ Floor</button>
+      <button class="btn" id="increase-lift">+ Lift</button>
+    </div>
+    <div class="building">
+      <div class="floor-container">
+        <div class="wrapper">
+          <div class="lift-btns">
+            <button class="toggle btn-up" data-floor="0">UP</button>
+            <button class="toggle btn-down" data-floor="0">Down</button>
+          </div>
+          <div class="lift-container">
+            <div class="lift" data-liftposition="0">
+              <div class="left-door"></div>
+              <div class="right-door"></div>
+            </div>
+          </div>
+        </div>
+        <div class="floor">
+          <div class="floor-line"></div>
+          <div class="floor-num-text">
+            Floor : <span class="floor-num">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/inaveentata/Lift-Simulation" target="_blank"
+        >Github Source</a
+      >
+    </footer>
+
+    <script src="/src/js/main.js"></script>
+  </body>
+</html>

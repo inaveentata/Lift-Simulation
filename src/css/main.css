@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border: 1px solid;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: antiquewhite;
+  letter-spacing: 1.5px;
+}
+
+.input-container {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  margin: 0.5rem;
+  padding: 0.2rem 0.3rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.building {
+  margin: 5rem auto;
+  max-width: 1140px;
+}
+
+.floore-container {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.floor {
+  display: flex;
+  align-items: center;
+}
+
+.floor-line {
+  background-color: black;
+  height: 2px;
+  width: 85%;
+  margin-right: 5px;
+}
+
+.floor-num-text {
+  font-size: 0.7rem;
+}
+
+.btn-up {
+  background-color: antiquewhite;
+}
+
+.btn-up,
+.btn-down {
+  width: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 1.5px 0;
+}
+
+.lift-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.lift-container {
+  position: relative;
+  width: 80%;
+}
+
+.lift {
+  border: 4px solid rgb(15, 14, 13);
+  height: 80px;
+  width: 10%;
+  margin-left: 10px;
+
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.left-door {
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+  align-self: left;
+  background-color: rgb(65, 199, 240);
+  border-right: 2px solid rgb(122, 122, 122);
+  transition: 2.5s;
+}
+
+.move-left {
+  transform: translate(-100%);
+  transition-duration: 2.5s;
+}
+
+.right-door {
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+  background-color: rgb(65, 199, 240);
+  border-left: 2px solid rgb(122, 122, 122);
+  transition-duration: 2.5s;
+}
+
+.move-right {
+  transform: translate(100%);
+  transition: 2.5s;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  background-color: antiquewhite;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 501px) {
+  .lift {
+    width: 6%;
+  }
+  .btn-up,
+  .btn-down {
+    width: 5rem;
+  }
+}
