@@ -8,7 +8,7 @@ header {
   border: 1px solid;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: antiquewhite;
+  background-color: rgb(248, 192, 119);
   letter-spacing: 1.5px;
 }
 
@@ -129,7 +129,7 @@ footer {
   width: 100%;
   letter-spacing: 2px;
   font-size: 1.5rem;
-  background-color: antiquewhite;
+  background-color: rgb(235, 175, 98);
 }
 footer a {
   color: black;
