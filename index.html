@@ -11,30 +11,18 @@
       <h1>Lift Simulation</h1>
     </header>
     <div class="input-container">
-      <button class="btn" id="increase-floor">+ Floor</button>
-      <button class="btn" id="increase-lift">+ Lift</button>
+      <label for="numOfFloors">
+        No.of Floors: 
+        <input name="numOfFloors" type="number" id="numOfFloors" min="1" max="20">
+      </label>
+      <label for="numOfLifts">
+        No.of Lifts: 
+        <input name="numOfLifts" type="number" id="numOfLifts" min="1" max="10">
+      </label>
+      <button class="generate-btn" id="generator">Generate</button>
     </div>
     <div class="building">
-      <div class="floor-container">
-        <div class="wrapper">
-          <div class="lift-btns">
-            <button class="toggle btn-up" data-floor="0">UP</button>
-            <button class="toggle btn-down" data-floor="0">Down</button>
-          </div>
-          <div class="lift-container">
-            <div class="lift" data-liftposition="0">
-              <div class="left-door"></div>
-              <div class="right-door"></div>
-            </div>
-          </div>
-        </div>
-        <div class="floor">
-          <div class="floor-line"></div>
-          <div class="floor-num-text">
-            Floor : <span class="floor-num">0</span>
-          </div>
-        </div>
-      </div>
+      <div id="output"></div>
     </div>
     <footer>
       <a href="https://github.com/inaveentata/Lift-Simulation" target="_blank"
